@@ -41,9 +41,7 @@ CREATE TABLE transactions (
 CREATE TABLE loans (
     loan_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
-    loan_amount DECIMAL(15, ```sql
--- Продолжение создания таблицы кредитов
-    2) NOT NULL,
+    loan_amount DECIMAL(15, 2) NOT NULL,
     interest_rate DECIMAL(5, 2) NOT NULL,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
